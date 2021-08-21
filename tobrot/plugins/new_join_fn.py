@@ -15,7 +15,7 @@ async def new_join_f(client, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton('Channel', url='https://t.me/MaxxBots')
+                        InlineKeyboardButton('🧑‍🔬 𝗢𝗡𝗪𝗘𝗥 🧑‍🔬', url='https://t.me/mhd_thanzeer')
                     ]
                 ]
                )
