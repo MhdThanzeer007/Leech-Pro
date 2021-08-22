@@ -68,10 +68,10 @@ async def incoming_message_f(client, message):
         LOGGER.info(dl_url)
         cf_name = None
     else:
-        await i_m_sefg.edit("<b>Hey Dude !</b>\n\n 🐈 <code>Reply with Direct /Torrent Link</code>")
+        await i_m_sefg.edit("<b>Hey Dude !</b>\n\n 🔥 എന്തെകിലും ഒരു **Direct /Torrent Link** ഇന് Reply താടോ..!!")
         return
     if dl_url is not None:
-        await i_m_sefg.edit_text("<b>Extracting Link..🤐</b>")
+        await i_m_sefg.edit_text("<b>Extracting Link..😏</b>")
         # start the aria2c daemon
         aria_i_p = await aria_start()
         # LOGGER.info(aria_i_p)
