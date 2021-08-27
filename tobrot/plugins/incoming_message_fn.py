@@ -276,7 +276,7 @@ async def rename_tg_file(client, message):
                 message_to_send = mention_req_user + message_to_send
                 message_to_send = message_to_send + "\n\n" + "<b> #UPLOADS\n\n💫 Powered By : [𝗠𝗛𝗗_𝗧𝗛𝗔𝗡𝗭𝗘𝗘𝗥](https://t.me/mhd_thanzeer)</b>"
             else:
-                message_to_send = "<i>FAILED</i> to upload files. 😞😞"
+                message_to_send = "**FAILED🥵**\n **അഹ് " ഇപ്പൊ എങ്ങനെ ഇരിക്കുന്നു..!**😒"
             await message.reply_text(
                 text=message_to_send, quote=True, disable_web_page_preview=True
             )
@@ -285,5 +285,5 @@ async def rename_tg_file(client, message):
 
     else:
         await message.reply_text(
-            "<b> Oops 😬</b>\n\nProvide Name with extension\n\n➩<b>Example</b>: <code> /rename Your File Name.mkv</code>", quote=True
+            "<b> മൂഞ്ചി 😬</b>\n\nProvide Name with extension\n\n➩<b>Example</b>: <code> /rename Your File Name.mkv</code>", quote=True
         )
