@@ -263,7 +263,7 @@ async def rename_tg_file(client, message):
                 message_id = final_response[key_f_res_se]
                 channel_id = str(message.chat.id)[4:]
                 private_link = f"https://t.me/c/{channel_id}/{message_id}"
-                message_to_send += "➪ <a href='"
+                message_to_send += "➭ <a href='"
                 message_to_send += private_link
                 message_to_send += "'>"
                 message_to_send += local_file_name
@@ -285,5 +285,5 @@ async def rename_tg_file(client, message):
 
     else:
         await message.reply_text(
-            "<b> മൂഞ്ചി 😬</b>\n\nProvide Name with extension\n\n➩<b>Example</b>: <code> /rename Your File Name.mkv</code>", quote=True
+            "<b> മൂഞ്ചി 😬</b>\n\nProvide Name with extension\n\n➭<b>Example</b>: <code> /rename Your File Name.mkv</code>", quote=True
         )
