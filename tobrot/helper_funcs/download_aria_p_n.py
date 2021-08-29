@@ -324,7 +324,7 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
                     pass
                 #
                 if is_file is None:
-                    msgg = f"<b>➥ Connections : {file.connections} </b>"
+                    msgg =f"<b>➥ Connections : {file.connections} </b>"
                 else:
                     msgg = f"<b>➥ Info :- P: {file.connections} || S: {file.num_seeders} </b>\n\n<b>❌ GID :</b> <code>{gid}</code>"
                 msg = f"\n<b>🎭 File Name :</b> `{downloading_dir_name}`\n\n<b>➥ Speed :</b> `{file.download_speed_string()}`"
@@ -373,7 +373,7 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
             )
             await asyncio.sleep(EDIT_SLEEP_TIME_OUT)
             await event.edit(
-                f"<b>Leech Successfully</b>:\n\n🤗 <b>File Name</b>: \n**{file.name}**\n\n📀 <b>Total Size</b>: **〘{file.total_length_string()}〙**"
+                f"<b>Leech Successfully</b>:\n\n🤗 <i>File Name</i>: \n**{file.name}**\n\n📀 <b>Total Size</b>: **〘{file.total_length_string()}〙**"
             )
             return True
     except aria2p.client.ClientException:
