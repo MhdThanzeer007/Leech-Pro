@@ -329,7 +329,7 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
                     msgg = f"<b>➥ Info :- P: {file.connections} || S: {file.num_seeders} </b>\n\n\n<b>❌ GID :</b> <code>{gid}</code>"
                 msg = f"\n\n<b>🦋 File Name :</b> `{downloading_dir_name}`\n\n\n<b>➥ Speed :</b> `{file.download_speed_string()}`"
                 msg += f"\n\n<b>➥ Size :</b> `{file.total_length_string()}`"
-                msg += f"\n\n<b>➥ Downloaded</b> : `{file.progress_string()}`\n\n\n<b>➥ ETA :</b> `{file.eta_string()}` \n\n {msgg}"
+                msg += f"\n\n<b>➥ Downloaded</b> : `{file.progress_string()}`\n\n<b>➥ ETA :</b> `{file.eta_string()}` \n\n {msgg}"
                 inline_keyboard = []
                 ikeyboard = []
                 ikeyboard.append(
