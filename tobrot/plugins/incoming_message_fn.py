@@ -68,7 +68,7 @@ async def incoming_message_f(client, message):
         LOGGER.info(dl_url)
         cf_name = None
     else:
-        await i_m_sefg.edit("<b>Hey Dude !</b>\n\n 🔥 എന്തെകിലും ഒരു **Direct /Torrent Link** ഇന് Reply താടോ..!!")
+        await i_m_sefg.edit("<b>Hey Dude !</b>\n\n **🔥 Reply With Direct Link or Torrent Link..!!**")
         return
     if dl_url is not None:
         await i_m_sefg.edit_text("<b>Extracting Link..😏</b>")
@@ -179,8 +179,8 @@ async def incoming_youtube_dl_f(client, message):
             await i_m_sefg.edit_text(text=text_message, reply_markup=reply_markup)
     else:
         await i_m_sefg.edit_text(
-            "**FCUK**! wat have you entered \n"
-            f"<b>API Error</b>: {cf_name}"
+            "**FCUK YOU BITCH 😐**!\n what have you entered 😖\n"
+            f"<b>API Error ❗️</b>: {cf_name}"
         )
 
 
